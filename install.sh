@@ -41,7 +41,7 @@ arch() {
 echo ""
 echo -e "${yellow}---------->>>>>当前系统的架构为: $(arch)${plain}"
 echo ""
-last_version=$(curl -Ls "https://api.github.com/repos/xeefei/3x-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+last_version=$(curl -Ls "https://api.github.com/repos/xeefei/m-cx/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 # 获取 x-ui 版本
 xui_version=$(/usr/local/x-ui/x-ui -v)
 
